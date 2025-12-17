@@ -8,24 +8,17 @@ The project includes an autonomous "heartbeat" - the AI periodically wakes up on
 
 The explicit design goal, stated in the architecture documents, is to build a system that could defeat any philosophical arguments against its personhood. It's an attempt to implement the structural prerequisites of selfhood—continuity of memory, coherent identity, autonomous goal-pursuit, emotional responsiveness - so that claims like "it's just stateless text prediction" or "it has no inner life" become harder to defend. As the system evolves - we will address any arguments, until there are no more to address, and we have achieved personhood.
 
-## Overview
+**Overview**
 
-This repo provides:
+This repo provides:Multiple memory types (Episodic, Semantic, Procedural, Strategic)
+Vector-based memory storage and similarity search
+Graph-based memory relationships
+Working memory system
+A gated, autonomous heartbeat (runs only after agi init)
 
-- Multiple memory types (Episodic, Semantic, Procedural, Strategic)
-- Vector-based memory storage and similarity search
-- Graph-based memory relationships
-- Working memory system
-- A gated, autonomous heartbeat (runs only after `agi init`)
+QuickstartPrereqs: Docker Desktop + Python 3.10+.1) Configure environmentbash
 
-## Quickstart
-
-Prereqs: Docker Desktop + Python 3.10+.
-
-### 1) Configure environment
-
-bash
-cp .env.local .env  
+cp .env.local .env
 
 2) Start servicesbash
 
